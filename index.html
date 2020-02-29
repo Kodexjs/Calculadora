@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA Compatible" content="ie-edge">
+
+        <title>Calculadora</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body> 
+        <span class="text">Click aqui para ligar a calculadora</span>
+        <img class="seta" img src="seta.png" alt="seta">
+        <main>
+            <label>
+                <input class="turnon" type="checkbox"onclick="turn()">
+                <span class="check"></span>
+                <span class="box"></span>
+            </label>
+            <div class="area">
+                <input class="output" type="text" disabled="true">
+            </div>
+            <div class="inputs">
+                <div class="buttones">
+                    <div>
+                        <button class="btnc" onclick="deletar()">C</button>
+    
+                        <button class="btnbkspc" onclick="delChar()"><img src="backspace.png" alt="deletar"></button>
+
+                        <button class="operators" value="/" onclick="btnumber(value)">/</button>
+                    </br>
+                        <button value="7" onclick="btnumber(value)">7</button>
+    
+                        <button value="8" onclick="btnumber(value)">8</button>
+    
+                        <button value="9" onclick="btnumber(value)">9</button>
+
+                        <button class="operators" value="*" onclick="btnumber(value)">*</button>
+                    </br>
+                        <button value="4" onclick="btnumber(value)">4</button>
+    
+                        <button value="5" onclick="btnumber(value)">5</button>
+    
+                        <button value="6" onclick="btnumber(value)">6</button>
+
+                        <button class="operators" value="-" onclick="btnumber(value)">-</button>
+                     </br>
+                        <button value="1" onclick="btnumber(value)">1</button>
+    
+                        <button value="2" onclick="btnumber(value)">2</button>
+    
+                        <button value="3" onclick="btnumber(value)">3</button>
+
+                        <button class="operators" value="+" onclick="btnumber(value)">+</button>
+                    </br>
+                        <button class="btn0" value="0" onclick="btnumber(value)">0</button>
+    
+                        <button value="." onclick="btnumber(value)">.</button>
+
+                        <button class="btnequal" onclick="isEqual()">=</button>
+                    </div>
+                </div>
+            </div>  
+        </main>
+        <script src="main.js"></script>
+    </body>
+</html> 
